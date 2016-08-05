@@ -17,7 +17,7 @@ node {
     step([$class: 'FindBugsPublisher'])
     step([$class: 'CheckStylePublisher'])
     step([$class: 'AnalysisPublisher'])
-    step([$class: 'JavadocArchiver', javadocDir: 'mariageRest/target/site/apidocs', keepAll: false])
+    step([$class: 'JavadocArchiver', javadocDir: 'target/site/apidocs', keepAll: false])
 }
 
 stage 'Approve'
